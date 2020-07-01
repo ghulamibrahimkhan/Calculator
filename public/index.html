@@ -13,36 +13,38 @@
     <div class="main"> 
         <div class="head"><h3>CALCULATOR</h3><p>+ - * /</p></div>
         <div>
-            <div><input class="result" type="text"></div>
+            <div><input id="result" class="result" type="text"></div>
         </div>
         <div>
-            <button class="clear-btn">C</button>
+            <button onclick="clearResult()" class="clear-btn">C</button>
         </div>
         <div>
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn">x</button>
+            <button onclick="getNumber('7')" class="btn">7</button>
+            <button onclick="getNumber('8')" class="btn">8</button>
+            <button onclick="getNumber('9')" class="btn">9</button>
+            <button onclick="getNumber('*')" class="btn">x</button>
         </div>
         <div>
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn">-</button>
+            <button onclick="getNumber('4')" class="btn">4</button>
+            <button onclick="getNumber('5')" class="btn">5</button>
+            <button onclick="getNumber('6')" class="btn">6</button>
+            <button onclick="getNumber('-')" class="btn">-</button>
         </div>
         <div>
-            <button class="btn">1</button>
-            <button class="btn">2</button>
-            <button class="btn">3</button>
-            <button class="btn">4</button>
+            <button onclick="getNumber('1')" class="btn">1</button>
+            <button onclick="getNumber('2')" class="btn">2</button>
+            <button onclick="getNumber('3')" class="btn">3</button>
+            <button onclick="getNumber('+')" class="btn">+</button>
         </div>
         <div>
-            <button class="half-btn">0</button>
-            <button class="half-btn">=</button>
+            <button onclick="getNumber('0')" class="half-btn">0</button>
+            <button onclick="getNumber('/')" class="half-btn">/</button>
+            <button onclick="getResult('=')" class="half-btn">=</button>
         </div>
 
     </div>
 
 </body>
+<script src="app.js"></script>
 
 </html>
